@@ -1,0 +1,8 @@
+(fp_lib_table
+  (lib (name D1)(type KiCad)(uri /home/martin/Documentos/Arduino/leds_rgb/PCB/placa/modules/wemos-d1-mini.pretty)(options "")(descr ""))
+  (lib (name resistor)(type KiCad)(uri /home/martin/KICAD/LIBS/mod_pth_resistors/w_pth_resistors.pretty)(options "")(descr ""))
+  (lib (name conn)(type KiCad)(uri /home/martin/KICAD/LIBS/mod_conn_kk100/w_conn_kk100.pretty)(options "")(descr ""))
+  (lib (name transistor)(type KiCad)(uri /home/martin/KICAD/LIBS/mod_to/w_to.pretty)(options "")(descr ""))
+  (lib (name conector_power)(type KiCad)(uri /home/martin/KICAD/LIBS/mod_conn_misc/w_conn_misc.pretty)(options "")(descr ""))
+  (lib (name conn2)(type KiCad)(uri /home/martin/KICAD/LIBS/mod_conn_mpt/w_conn_mpt.pretty)(options "")(descr ""))
+)

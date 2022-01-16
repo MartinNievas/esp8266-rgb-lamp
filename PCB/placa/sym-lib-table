@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name D1)(type Legacy)(uri /home/martin/Documentos/Arduino/leds_rgb/PCB/placa/libs/wemos_mini.lib)(options "")(descr ""))
+)

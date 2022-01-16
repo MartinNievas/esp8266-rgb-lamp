@@ -1,0 +1,461 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_FET:IRF540N Q1
+U 1 1 61E31C9F
+P 7950 1800
+F 0 "Q1" H 8154 1846 50  0000 L CNN
+F 1 "IRF540N" H 8154 1755 50  0000 L CNN
+F 2 "transistor:to220" H 8200 1725 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 7950 1800 50  0001 L CNN
+	1    7950 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM317_TO-220 U1
+U 1 1 61E323A3
+P 3400 1100
+F 0 "U1" H 3400 1342 50  0000 C CNN
+F 1 "LM317" H 3400 1251 50  0000 C CNN
+F 2 "transistor:to220" H 3400 1350 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 3400 1100 50  0001 C CNN
+	1    3400 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 61E3415B
+P 3400 2650
+F 0 "#PWR0101" H 3400 2400 50  0001 C CNN
+F 1 "GND" H 3405 2477 50  0000 C CNN
+F 2 "" H 3400 2650 50  0001 C CNN
+F 3 "" H 3400 2650 50  0001 C CNN
+	1    3400 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2650 3400 2500
+Wire Wire Line
+	2700 2500 3400 2500
+$Comp
+L Device:R R2
+U 1 1 61E34ABB
+P 3950 1400
+F 0 "R2" H 4020 1446 50  0000 L CNN
+F 1 "1K" H 4020 1355 50  0000 L CNN
+F 2 "resistor:RC05" V 3880 1400 50  0001 C CNN
+F 3 "~" H 3950 1400 50  0001 C CNN
+	1    3950 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 61E34E9E
+P 3400 2150
+F 0 "R1" H 3470 2196 50  0000 L CNN
+F 1 "3K" H 3470 2105 50  0000 L CNN
+F 2 "resistor:RC05" V 3330 2150 50  0001 C CNN
+F 3 "~" H 3400 2150 50  0001 C CNN
+	1    3400 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2500 3400 2300
+Connection ~ 3400 2500
+Wire Wire Line
+	2700 2500 2700 1200
+Wire Wire Line
+	3400 1400 3400 1750
+Wire Wire Line
+	3950 1550 3950 1750
+Wire Wire Line
+	3950 1750 3400 1750
+Connection ~ 3400 1750
+Wire Wire Line
+	3400 1750 3400 2000
+Wire Wire Line
+	3700 1100 3950 1100
+Wire Wire Line
+	3950 1250 3950 1100
+Connection ~ 3950 1100
+Wire Wire Line
+	3950 1100 4650 1100
+Wire Wire Line
+	8050 1300 8050 1600
+Wire Wire Line
+	8050 2000 8050 2350
+$Comp
+L power:GND #PWR0102
+U 1 1 61E3E5FB
+P 8050 2450
+F 0 "#PWR0102" H 8050 2200 50  0001 C CNN
+F 1 "GND" H 8055 2277 50  0000 C CNN
+F 2 "" H 8050 2450 50  0001 C CNN
+F 3 "" H 8050 2450 50  0001 C CNN
+	1    8050 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 61E3E7C1
+P 7100 1800
+F 0 "R3" V 6893 1800 50  0000 C CNN
+F 1 "1K" V 6984 1800 50  0000 C CNN
+F 2 "resistor:RC05" V 7030 1800 50  0001 C CNN
+F 3 "~" H 7100 1800 50  0001 C CNN
+	1    7100 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 61E3EC4F
+P 7500 2100
+F 0 "R6" H 7570 2146 50  0000 L CNN
+F 1 "10K" H 7570 2055 50  0000 L CNN
+F 2 "resistor:RC05" V 7430 2100 50  0001 C CNN
+F 3 "~" H 7500 2100 50  0001 C CNN
+	1    7500 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 1950 7500 1800
+Wire Wire Line
+	7500 1800 7250 1800
+Wire Wire Line
+	7500 1800 7750 1800
+Connection ~ 7500 1800
+Wire Wire Line
+	7500 2250 7500 2350
+Wire Wire Line
+	7500 2350 8050 2350
+Connection ~ 8050 2350
+Wire Wire Line
+	8050 2350 8050 2450
+Wire Wire Line
+	6950 1800 6550 1800
+Text Label 6550 1800 0    50   ~ 0
+RED_LED
+$Comp
+L Transistor_FET:IRF540N Q2
+U 1 1 61E4341F
+P 7950 3300
+F 0 "Q2" H 8154 3346 50  0000 L CNN
+F 1 "IRF540N" H 8154 3255 50  0000 L CNN
+F 2 "transistor:to220" H 8200 3225 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 7950 3300 50  0001 L CNN
+	1    7950 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2800 8050 3100
+Wire Wire Line
+	8050 3500 8050 3850
+$Comp
+L power:GND #PWR0103
+U 1 1 61E4342E
+P 8050 3950
+F 0 "#PWR0103" H 8050 3700 50  0001 C CNN
+F 1 "GND" H 8055 3777 50  0000 C CNN
+F 2 "" H 8050 3950 50  0001 C CNN
+F 3 "" H 8050 3950 50  0001 C CNN
+	1    8050 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 61E43434
+P 7100 3300
+F 0 "R4" V 6893 3300 50  0000 C CNN
+F 1 "1K" V 6984 3300 50  0000 C CNN
+F 2 "resistor:RC05" V 7030 3300 50  0001 C CNN
+F 3 "~" H 7100 3300 50  0001 C CNN
+	1    7100 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 61E4343A
+P 7500 3600
+F 0 "R7" H 7570 3646 50  0000 L CNN
+F 1 "10K" H 7570 3555 50  0000 L CNN
+F 2 "resistor:RC05" V 7430 3600 50  0001 C CNN
+F 3 "~" H 7500 3600 50  0001 C CNN
+	1    7500 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3450 7500 3300
+Wire Wire Line
+	7500 3300 7250 3300
+Wire Wire Line
+	7500 3300 7750 3300
+Connection ~ 7500 3300
+Wire Wire Line
+	7500 3750 7500 3850
+Wire Wire Line
+	7500 3850 8050 3850
+Connection ~ 8050 3850
+Wire Wire Line
+	8050 3850 8050 3950
+Wire Wire Line
+	6950 3300 6550 3300
+Text Label 6550 3300 0    50   ~ 0
+GREEN_LED
+$Comp
+L Transistor_FET:IRF540N Q3
+U 1 1 61E44A9F
+P 7950 4750
+F 0 "Q3" H 8154 4796 50  0000 L CNN
+F 1 "IRF540N" H 8154 4705 50  0000 L CNN
+F 2 "transistor:to220" H 8200 4675 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 7950 4750 50  0001 L CNN
+	1    7950 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 4250 8050 4550
+Wire Wire Line
+	8050 4950 8050 5300
+$Comp
+L power:GND #PWR0104
+U 1 1 61E44AAE
+P 8050 5400
+F 0 "#PWR0104" H 8050 5150 50  0001 C CNN
+F 1 "GND" H 8055 5227 50  0000 C CNN
+F 2 "" H 8050 5400 50  0001 C CNN
+F 3 "" H 8050 5400 50  0001 C CNN
+	1    8050 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 61E44AB4
+P 7100 4750
+F 0 "R5" V 6893 4750 50  0000 C CNN
+F 1 "1K" V 6984 4750 50  0000 C CNN
+F 2 "resistor:RC05" V 7030 4750 50  0001 C CNN
+F 3 "~" H 7100 4750 50  0001 C CNN
+	1    7100 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 61E44ABA
+P 7500 5050
+F 0 "R8" H 7570 5096 50  0000 L CNN
+F 1 "10K" H 7570 5005 50  0000 L CNN
+F 2 "resistor:RC05" V 7430 5050 50  0001 C CNN
+F 3 "~" H 7500 5050 50  0001 C CNN
+	1    7500 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 4900 7500 4750
+Wire Wire Line
+	7500 4750 7250 4750
+Wire Wire Line
+	7500 4750 7750 4750
+Connection ~ 7500 4750
+Wire Wire Line
+	7500 5200 7500 5300
+Wire Wire Line
+	7500 5300 8050 5300
+Connection ~ 8050 5300
+Wire Wire Line
+	8050 5300 8050 5400
+Wire Wire Line
+	6950 4750 6550 4750
+Text Label 6550 4750 0    50   ~ 0
+BLUE_LED
+Text Label 7250 900  0    50   ~ 0
+POWER
+Text Label 2250 1100 0    50   ~ 0
+POWER
+$Comp
+L D1:WeMos_D1_mini U2
+U 1 1 61E5202D
+P 2900 4350
+F 0 "U2" H 2900 5093 60  0000 C CNN
+F 1 "WeMos_D1_mini" H 2900 4987 60  0000 C CNN
+F 2 "D1:wemos-d1-mini-with-pin-header" H 3450 3650 60  0001 C CNN
+F 3 "http://www.wemos.cc/Products/d1_mini.html" H 2900 4881 60  0000 C CNN
+	1    2900 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4600 3850 4600
+$Comp
+L power:+5V #PWR02
+U 1 1 61E53A15
+P 4650 950
+F 0 "#PWR02" H 4650 800 50  0001 C CNN
+F 1 "+5V" H 4665 1123 50  0000 C CNN
+F 2 "" H 4650 950 50  0001 C CNN
+F 3 "" H 4650 950 50  0001 C CNN
+	1    4650 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 950  4650 1100
+$Comp
+L power:GND #PWR01
+U 1 1 61E56DE9
+P 3850 4900
+F 0 "#PWR01" H 3850 4650 50  0001 C CNN
+F 1 "GND" H 3855 4727 50  0000 C CNN
+F 2 "" H 3850 4900 50  0001 C CNN
+F 3 "" H 3850 4900 50  0001 C CNN
+	1    3850 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 4900 3850 4600
+$Comp
+L power:+5V #PWR03
+U 1 1 61E5851C
+P 4700 4700
+F 0 "#PWR03" H 4700 4550 50  0001 C CNN
+F 1 "+5V" H 4715 4873 50  0000 C CNN
+F 2 "" H 4700 4700 50  0001 C CNN
+F 3 "" H 4700 4700 50  0001 C CNN
+	1    4700 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 4300 1850 4300
+Wire Wire Line
+	1850 4400 2400 4400
+Wire Wire Line
+	1850 4500 2400 4500
+Text Label 1850 4300 0    50   ~ 0
+RED_LED
+Text Label 1850 4400 0    50   ~ 0
+GREEN_LED
+Text Label 1850 4500 0    50   ~ 0
+BLUE_LED
+$Comp
+L Connector:Conn_01x03_Female J2
+U 1 1 61E5DB31
+P 1450 4100
+F 0 "J2" H 1342 3775 50  0000 C CNN
+F 1 "RST_A0_D0" H 1342 3866 50  0000 C CNN
+F 2 "conn:kk100_22-23-2031" H 1450 4100 50  0001 C CNN
+F 3 "~" H 1450 4100 50  0001 C CNN
+	1    1450 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1650 4000 2400 4000
+Wire Wire Line
+	2400 4100 1650 4100
+Wire Wire Line
+	1650 4200 2400 4200
+$Comp
+L Connector:Conn_01x02_Female J7
+U 1 1 61E61290
+P 1450 4700
+F 0 "J7" H 1342 4375 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 1342 4466 50  0000 C CNN
+F 2 "conn:kk100_22-23-2021" H 1450 4700 50  0001 C CNN
+F 3 "~" H 1450 4700 50  0001 C CNN
+	1    1450 4700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1650 4600 2400 4600
+Wire Wire Line
+	2400 4700 1650 4700
+$Comp
+L Connector:Conn_01x06_Female J8
+U 1 1 61E66157
+P 4200 4200
+F 0 "J8" H 4228 4176 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 4228 4085 50  0000 L CNN
+F 2 "conn:kk100_22-23-2061" H 4200 4200 50  0001 C CNN
+F 3 "~" H 4200 4200 50  0001 C CNN
+	1    4200 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4000 3400 4000
+Wire Wire Line
+	3400 4100 4000 4100
+Wire Wire Line
+	4000 4200 3400 4200
+Wire Wire Line
+	4000 4300 3400 4300
+Wire Wire Line
+	3400 4400 4000 4400
+Wire Wire Line
+	4000 4500 3400 4500
+Wire Wire Line
+	3400 4700 4700 4700
+$Comp
+L Connector:Conn_01x04_Female J3
+U 1 1 61E99A94
+P 10550 3100
+F 0 "J3" H 10578 3076 50  0000 L CNN
+F 1 "VCC_RGB" H 10578 2985 50  0000 L CNN
+F 2 "conn:kk100_22-23-2041" H 10550 3100 50  0001 C CNN
+F 3 "~" H 10550 3100 50  0001 C CNN
+	1    10550 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 900  10350 3000
+Wire Wire Line
+	7250 900  10350 900 
+Wire Wire Line
+	10350 3100 9100 3100
+Wire Wire Line
+	9100 3100 9100 1300
+Wire Wire Line
+	8050 1300 9100 1300
+Wire Wire Line
+	8950 2800 8950 3200
+Wire Wire Line
+	8950 3200 10350 3200
+Wire Wire Line
+	8050 2800 8950 2800
+Wire Wire Line
+	10350 3300 8950 3300
+Wire Wire Line
+	8950 3300 8950 4250
+Wire Wire Line
+	8050 4250 8950 4250
+$Comp
+L Connector:Conn_01x03_Female J1
+U 1 1 61EC93F9
+P 1550 1200
+F 0 "J1" H 1442 875 50  0000 C CNN
+F 1 "Alimentación" H 1442 966 50  0000 C CNN
+F 2 "conector_power:dc_socket" H 1550 1200 50  0001 C CNN
+F 3 "~" H 1550 1200 50  0001 C CNN
+	1    1550 1200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1750 1100 3100 1100
+Wire Wire Line
+	1750 1200 1950 1200
+Wire Wire Line
+	1750 1300 1950 1300
+Wire Wire Line
+	1950 1300 1950 1200
+Connection ~ 1950 1200
+Wire Wire Line
+	1950 1200 2700 1200
+$EndSCHEMATC
